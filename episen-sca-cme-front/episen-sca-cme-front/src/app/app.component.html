@@ -1,0 +1,12 @@
+<form #orderform="ngForm" (ngSubmit)="onFormSubmit(orderform)" >
+  <label> Order</label>
+  <input type="text"
+         ngModel
+         size="10" maxlength="40"
+         name="order"
+         id="order"
+  /><br />
+  <br />
+  <button class="btn btn-primary"> Submit</button>
+
+</form>
