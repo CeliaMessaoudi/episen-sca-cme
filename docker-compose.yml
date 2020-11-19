@@ -2,12 +2,12 @@ version: "3.0"
 
 services:
   backend:
-    image: "episen-sca-cme-back"
+    image: "celiamssd/episen-sca-cme-back"
     restart: always
     ports:
       - "8080:8080"
     volumes:
-      - 'C:\Users\celia\Documents\GitHub\episen-sca-cme\episen-sca-cme-back\dockerlogs:/logs'
+      - './episen-sca-cme-back/dockerlogs:/logs'
     healthcheck:
       test: ["CMD", "curl -f http://localhost:8080 || exit 1"]
       timeout: 30s
@@ -24,12 +24,12 @@ services:
           memory: 64M
 
   frontend:
-    image: "episen-sca-cme-front"
+    image: "celiamssd/episen-sca-cme-front"
     restart: always
     ports:
       - "80:80"
     volumes:
-      - 'C:\Users\celia\Documents\GitHub\episen-sca-cme\episen-sca-cme-front\episen-sca-cme-front\dockerlog:/var/log/nginx'
+      - './episen-sca-cme-front/episen-sca-cme-front/dockerlog:/var/log/nginx'
     healthcheck:
       test: ["CMD", "curl -f http://localhost:80 || exit 1"]
       timeout: 30s
