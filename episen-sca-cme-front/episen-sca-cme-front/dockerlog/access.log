@@ -1,0 +1,2 @@
+192.168.99.1 - - [19/Nov/2020:10:39:53 +0000] "GET / HTTP/1.1" 200 813 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" "-"
+192.168.99.1 - - [19/Nov/2020:10:39:53 +0000] "GET /main-es2015.be518627734b28e16e44.js HTTP/1.1" 200 263692 "http://192.168.99.100/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" "-"

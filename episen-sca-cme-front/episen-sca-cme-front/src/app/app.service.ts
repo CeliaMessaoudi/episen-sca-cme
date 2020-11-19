@@ -9,7 +9,7 @@ export class OrderService {
   }
 
   addOrder(order: String): void {
-    this.http.post<any>('http://localhost:8080/add/order', order).subscribe(data => {
+    this.http.post<any>('http://192.168.99.100:8080/add/order', order).subscribe(data => {
       console.log("ça fonctionne");
     });
   }
