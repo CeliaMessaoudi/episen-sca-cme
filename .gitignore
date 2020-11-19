@@ -1,0 +1,8 @@
+.idea
+*.iws
+*.iml
+*.ipr
+
+episen-sca-cme-front/.idea/*
+episen-sca-cme-back/.idea/*
+episen-sca-cme-front/node_modules/*
